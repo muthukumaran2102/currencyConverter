@@ -146,6 +146,7 @@ function App() {
         fromCountry: toCountry,
       toCountry: fromCountry,
     });
+    setResult(undefined);
     }
   }
 
