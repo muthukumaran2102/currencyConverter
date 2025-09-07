@@ -1,5 +1,5 @@
 import Select, { components, type SingleValueProps } from "react-select";
-import type { CustomDropdownProps, DropdownOption } from "../types/InputTypes";
+import type { CustomDropdownProps, DropdownOption } from "../types/types";
 
 const DropDown: React.FC<CustomDropdownProps> = ({
   options,

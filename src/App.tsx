@@ -2,24 +2,13 @@ import { useEffect, useState, type ChangeEvent } from "react";
 import "./App.css";
 import Input from "./components/Input";
 import DropDown from "./components/DropDown";
-import type { DropdownOption } from "./types/InputTypes";
+import type { detail, DropdownOption, errorType, exchangerates } from "./types/types";
 import { getData } from "./apiCall/api";
 import Button from "./components/Button";
 import CountdownTimer from "./components/CountDown";
 import { CgArrowsExchangeV } from "react-icons/cg";
 
-type exchangerates = { [key: string]: string };
-type detail = {
-  money: string;
-  fromCountry: DropdownOption;
-  toCountry: DropdownOption;
-};
-interface errorType {
-      money: string;
-      fromCountry: string;
-      toCountry: string;
-      [key: string]: string;
-}
+
 
 function App() {
   const [countryList, setCountryList] = useState<DropdownOption[]>([]);

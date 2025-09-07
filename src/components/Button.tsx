@@ -1,5 +1,5 @@
 import React from "react";
-import { type ButtonProps } from "../types/InputTypes";
+import { type ButtonProps } from "../types/types";
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
     { children, variant = "primary", className = "", size = "medium",color='', ...rest },

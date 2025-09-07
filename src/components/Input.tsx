@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { type InputProps} from '../types/InputTypes'
+import { type InputProps} from '../types/types'
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
   ({ label, errorMessage, className, type, ...rest }, ref) => {

@@ -37,3 +37,16 @@ export interface CustomDropdownProps {
   selectedValue: DropdownOption
   name: string
 }
+
+export interface exchangerates  { [key: string]: string };
+export interface detail  {
+  money: string;
+  fromCountry: DropdownOption;
+  toCountry: DropdownOption;
+};
+export interface errorType {
+      money: string;
+      fromCountry: string;
+      toCountry: string;
+      [key: string]: string;
+}
